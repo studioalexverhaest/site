@@ -19,7 +19,7 @@ body {
   --sky: linear-gradient(180deg, #e5e5e5 0%, #002fa7 100%);
   --fancygradient: linear-gradient(180deg, #002fa7 0%, #4d837f 100%);
   --textfont: "Courier Prime", monospace;
-  --titlefont: Syne;
+  --titlefont: "Syne", sans-serif;
   --gutter: 3.125vw 6.25vw;
 }
 
@@ -60,12 +60,28 @@ h2 {
 
 p {
   font-size: 26px;
+  font-family: "Syne", sans-serif;
+}
+
+p.subtitle {
+  font-size: 40px;
+  margin: 0px;
+  font-family: var(--textfont);
+  font-weight: 300;
+  display: block;
 }
 
 a {
   color: var(--brick);
   font-size: 20px;
   text-decoration: none;
+}
+
+a.textlink {
+  color: white;
+  font-size: 40px;
+  font-family: var(--titlefont);
+  text-decoration: underline;
 }
 
 /* NAVIGATION  */
