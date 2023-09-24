@@ -305,6 +305,7 @@ section.service.service-contact figure img {
 
   section.service article {
     flex-direction: column;
+    flex-basis: 100vw;
   }
 
   section.service figure {
@@ -313,7 +314,7 @@ section.service.service-contact figure img {
   }
 
   section.service figure img {
-    width: 100%;
+    width: 90%;
   }
 
   p {
