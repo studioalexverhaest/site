@@ -309,7 +309,7 @@ section.service.service-contact figure img {
 
   section.service figure {
     width: 100%;
-    flex-basis: 25vh;
+    flex-basis: 100vw;
   }
 
   section.service figure img {
