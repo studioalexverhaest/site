@@ -152,7 +152,7 @@ section.service figure {
 }
 
 section.service figure img {
-  width: 45%;
+  width: 100%;
 }
 
 section.service .text {
@@ -207,26 +207,26 @@ section.email a:hover {
 /* SERVICE SECTION ANIMATIONS */
 
 section.service.service-stories figure img {
-  animation-name: floating;
+  /* animation-name: floating;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; */
 }
 
 section.service.service-projects figure img {
-  animation-name: spinning;
+  /* animation-name: spinning;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; */
 }
 
 section.service.service-contact figure img {
-  animation-name: scaleandturn;
+  /* animation-name: scaleandturn;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
 @keyframes opacitychange {
