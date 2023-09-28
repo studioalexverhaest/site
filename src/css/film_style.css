@@ -170,6 +170,7 @@ section.service figure {
 
 section.service figure img {
   width: 100%;
+  max-height: 92vh;
 }
 
 section.service .text {
@@ -180,6 +181,7 @@ section.service .text {
   background: var(--sage);
   padding: 3.125vw;
   border-radius: var(--border-radius-notallround);
+  max-height: 90vh;
 }
 
 section.service .text a {
