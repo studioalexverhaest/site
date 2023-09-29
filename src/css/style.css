@@ -114,6 +114,10 @@ nav ul li {
 
 /* ABOUT-SECTION */
 
+section.about {
+  margin-top: 0px;
+}
+
 section.about .empty {
   flex-basis: 37.5vw;
   background: var(--sky);
@@ -145,7 +149,7 @@ section.about article .description {
   background: var(--brick);
   border-radius: var(--border-radius-allround);
   padding: 3.125vw;
-  color: white;
+
   max-height: 60vh;
 }
 
@@ -241,8 +245,16 @@ section.about.society.text {
   background: var(--brick);
   border-radius: var(--border-radius-allround);
   padding: 3.125vw;
-  color: white;
+  /* color: white; */
   max-height: 60vh;
+}
+
+/* NAV DROPDOWN */
+
+nav .dropdown .dropdown-menu {
+  /* display: flex;
+  background: red; */
+  position: absolute;
 }
 
 /* SERVICE SECTION ANIMATIONS */
