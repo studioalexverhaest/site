@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio of Alex Verhaest</title>
+    <title>Experimental Audiovisual Artist - Alex Verhaest</title>
+    <meta
+      name="description"
+      content="Alex is a female experimental audiovisual artist working explicitly with digital media. She is a pioneering woman in the new media arts who has won several awards; an ars electronica golden nica, a new face award at the japan media arts festival and she recently won the flemish cultural prize; the ultima in the category of digital arts."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,15 +21,69 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="src/css/installations_style.css" />
   </head>
   <body>
     <nav>
       <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="index.html#stories">Films</a></li>
-        <li><a href="index.html#projects">Installations</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
+        <li><a title="about" href="#about">About</a></li>
+        <li>
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-dark btn-sm dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <a title="films" href="#">Films</a>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#stories"
+                  ><button class="dropdown-item" type="button">
+                    More on films
+                  </button></a
+                >
+              </li>
+              <li>
+                <a title="films" href="films.html"
+                  ><button class="dropdown-item light" type="button">
+                    Society
+                  </button></a
+                >
+              </li>
+              <li>
+                <a title="installations" href="installations.html"
+                  ><button class="dropdown-item" type="button">
+                    Nesting
+                  </button></a
+                >
+              </li>
+              <li>
+                <a title="films" href="films.html"
+                  ><button class="dropdown-item" type="button">
+                    In Progress
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a title="Narrative Installations" href="#projects">Installations</a>
+        </li>
+        <li>
+          <a title="Commissioned work" href="#commissions">Commissions</a>
+        </li>
+        <li><a title="contact" href="#email">Contact</a></li>
       </ul>
     </nav>
 
