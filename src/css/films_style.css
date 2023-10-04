@@ -123,6 +123,11 @@ section.about.society.sticky {
   border-radius: var(--border-radius-allround); */
 }
 
+#firstfrontimage {
+  position: absolute;
+  background-color: red;
+}
+
 #backdrop {
   position: absolute;
   display: flex;
@@ -162,8 +167,8 @@ section.service figure {
   justify-content: center;
   flex-basis: 76.25vw;
   margin: 0;
-  /* background: var(--lilac);
-  border-radius: var(--border-radius-allround); */
+  background: var(--lilac);
+  border-radius: var(--border-radius-allround);
   max-width: 92.5vw;
   transition: flex-basis 4s ease-out;
 }
