@@ -85,6 +85,10 @@ a.textlink {
   text-decoration: underline;
 }
 
+a:active {
+  color: #002fa7;
+}
+
 /* NAVIGATION  */
 
 nav {
@@ -115,7 +119,7 @@ nav ul li {
 /* ABOUT-SECTION */
 
 section.about {
-  margin-top: 200px;
+  margin-top: 0px;
 }
 
 section.about .empty {

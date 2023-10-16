@@ -19,11 +19,17 @@ function handleMouseMove(event) {
 let dropdownbutton = document.querySelector(`nav .dropdown button`);
 console.log(dropdownbutton);
 
-let aboutSection = document.querySelector(`section .about`);
-console.log(aboutSection);
+let isOpen = false;
 
 dropdownbutton.addEventListener("click", dropdownAbout);
 
 function dropdownAbout(event) {
-  aboutSection.style.marginTop = `400 px`;
+  event.preventDefault();
+  let aboutSection = document.querySelector(`section.about`);
+  if (isOpen) {
+    aboutSection.style.marginTop = `0px`;
+  } else {
+    aboutSection.style.marginTop = `200px`;
+  }
+  isOpen = !isOpen;
 }
