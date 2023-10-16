@@ -167,7 +167,7 @@ section.service figure {
   justify-content: center;
   flex-basis: 76.25vw;
   margin: 0;
-  background: var(--lilac);
+  background: black;
   border-radius: var(--border-radius-allround);
   max-width: 92.5vw;
   transition: flex-basis 4s ease-out;

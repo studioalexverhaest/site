@@ -23,6 +23,12 @@ let isOpen = false;
 
 dropdownbutton.addEventListener("click", dropdownAbout);
 
+let dropdownInstallations = document.querySelector(
+  `nav .dropdownInstallations button`
+);
+
+dropdownInstallations.addEventListener("click", dropdownAbout);
+
 function dropdownAbout(event) {
   event.preventDefault();
   let aboutSection = document.querySelector(`section.about`);
