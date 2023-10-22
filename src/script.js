@@ -27,7 +27,7 @@ let dropdownInstallations = document.querySelector(
   `nav .dropdownInstallations button`
 );
 
-dropdownInstallations.addEventListener("click", dropdownAbout);
+dropdownInstallations.addEventListener("click", dropdownInstallationmenu);
 
 function dropdownAbout(event) {
   event.preventDefault();
@@ -36,6 +36,17 @@ function dropdownAbout(event) {
     aboutSection.style.marginTop = `0px`;
   } else {
     aboutSection.style.marginTop = `200px`;
+  }
+  isOpen = !isOpen;
+}
+
+function dropdownInstallationmenu(event) {
+  event.preventDefault();
+  let aboutSection = document.querySelector(`section.about`);
+  if (isOpen) {
+    aboutSection.style.marginTop = `200px`;
+  } else {
+    aboutSection.style.marginTop = `0px`;
   }
   isOpen = !isOpen;
 }
