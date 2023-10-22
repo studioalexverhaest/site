@@ -32,7 +32,11 @@
   <body>
     <nav>
       <ul>
-        <li><a class="active" title="about" href="index.html">About</a></li>
+        <li>
+          <a class="aboutbutton" id="aboutbutton" title="about" href="#about"
+            >About</a
+          >
+        </li>
         <li>
           <!-- //dropdown button films -->
           <div class="dropdown">
@@ -125,11 +129,20 @@
         </li>
 
         <li>
-          <a title="Commissioned work" href="#commissions">Commissions</a>
+          <a
+            class="commissionsbutton"
+            id="commissionsbutton"
+            href="#commissions"
+            >Commissions</a
+          >
         </li>
         <li><a title="contact" href="#email">Contact</a></li>
       </ul>
     </nav>
+
+    <section id="about" class="about">
+      <div id="empty" class="empty"></div>
+    </section>
 
     <section id="aboutVideo society" class="aboutVideo society sticky">
       <iframe
@@ -140,8 +153,6 @@
         allow="autoplay; fullscreen; picture-in-picture"
         title="Trailer Society - a narrative installation"
       ></iframe>
-      <script src="https://player.vimeo.com/api/player.js"></script>
-      <div class="empty"></div>
     </section>
 
     <section id="about society video" class="about society video"></section>
@@ -239,5 +250,6 @@
     </section>
 
     <script src="src/script.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
   </body>
 </html>
