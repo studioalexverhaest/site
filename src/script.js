@@ -19,34 +19,42 @@ function handleMouseMove(event) {
 let dropdownbutton = document.querySelector(`nav .dropdown button`);
 console.log(dropdownbutton);
 
+let dropdowninstallations = document.querySelector(
+  `nav .dropdownInstallations button`
+);
+
 let isOpen = false;
 
 dropdownbutton.addEventListener("click", dropdownAbout);
 
-let dropdownInstallations = document.querySelector(
-  `nav .dropdownInstallations button`
-);
-
-dropdownInstallations.addEventListener("click", dropdownInstallationmenu);
+dropdowninstallations.addEventListener("click", dropdownAbout);
 
 function dropdownAbout(event) {
   event.preventDefault();
   let aboutSection = document.querySelector(`section.about`);
   if (isOpen) {
-    aboutSection.style.marginTop = `0px`;
+    aboutSection.style.marginTop = `200px`;
   } else {
     aboutSection.style.marginTop = `200px`;
   }
-  isOpen = !isOpen;
+  // isOpen = !isOpen;
 }
 
-function dropdownInstallationmenu(event) {
+let aboutbutton = document.querySelector("nav .aboutbutton");
+console.log(aboutbutton);
+
+let commissionsbutton = document.querySelector(`nav .commissionsbutton`);
+
+aboutbutton.addEventListener("click", dropupAbout);
+
+commissionsbutton.addEventListener("click", dropupAbout);
+
+function dropupAbout(event) {
   event.preventDefault();
   let aboutSection = document.querySelector(`section.about`);
   if (isOpen) {
-    aboutSection.style.marginTop = `200px`;
+    aboutSection.style.marginTop = `0px`;
   } else {
     aboutSection.style.marginTop = `0px`;
   }
-  isOpen = !isOpen;
 }
