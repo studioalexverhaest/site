@@ -28,13 +28,27 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="src/css/installations_style.css" />
+    <link rel="stylesheet" href="src/css/films_style.css" />
   </head>
   <body>
+     <!-- ///StART OF NAV -->
+    <!-- //about-button -->
     <nav>
       <ul>
-        <li><a title="about" href="index.html">About</a></li>
         <li>
+          <button
+              class="btn btn-outline-dark btn-sm"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              onclick="window.location.href='index.html#about';"
+            >
+          <a class="aboutbutton" id="aboutbutton" title="about" href="#about"
+            >About</a
+          >
+        </li>
+        <li>
+          <!-- //dropdown button films -->
           <div class="dropdown">
             <button
               class="btn btn-outline-dark btn-sm dropdown-toggle"
@@ -46,28 +60,28 @@
             </button>
             <ul class="dropdown-menu">
               <li>
-                <a href="#stories"
+                <a href="films.html"
                   ><button class="dropdown-item" type="button">
                     More on films
                   </button></a
                 >
               </li>
               <li>
-                <a title="films" href="films.html#society"
+                <a title="films" href="films.html"
                   ><button class="dropdown-item light" type="button">
                     Society
                   </button></a
                 >
               </li>
               <li>
-                <a title="installations" href="films.html#nesting"
+                <a title="installations" href="films.html"
                   ><button class="dropdown-item" type="button">
                     Nesting
                   </button></a
                 >
               </li>
               <li>
-                <a title="films" href="films.html#inProgress"
+                <a title="films" href="films.html"
                   ><button class="dropdown-item" type="button">
                     In Progress
                   </button></a
@@ -78,126 +92,178 @@
         </li>
 
         <li>
-          <a title="Narrative Installations" href="installations.html"
-            >Installations</a
-          >
+          <!-- //dropdown button installations -->
+
+          <div class="dropdownInstallations">
+            <button
+              class="btn btn-outline-dark btn-sm dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <a title="Narrative Installations" href="#projects"
+                >Installations</a
+              >
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#"
+                  ><button class="dropdown-item" type="button">
+                    More on installations
+                  </button></a
+                >
+              </li>
+              <li>
+                <a title="Installations" href="installations.html"
+                  ><button class="dropdown-item light" type="button">
+                    The archive of unattained futures
+                  </button></a
+                >
+              </li>
+              <li>
+                <a title="installations" href="installations.html"
+                  ><button class="dropdown-item" type="button">
+                    Temps Mort
+                  </button></a
+                >
+              </li>
+              <li>
+                <a title="films" href="installations.html"
+                  ><button class="dropdown-item" type="button">
+                    In Progress
+                  </button></a
+                >
+              </li>
+            </ul>
+          </div>
         </li>
+
+        <!-- //commissions-button -->
         <li>
-          <a title="Commissioned work" href="commissions.html">Commissions</a>
+          <button
+              class="btn btn-outline-dark btn-sm"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              onclick="window.location.href='index.html#commissions';"
+            >
+              <a
+            class="commissionsbutton"
+            id="commissionsbutton"
+            href="#commissions"
+            >Commissions</a
+          >
+
+<!-- //contact-button -->
         </li>
-        <li><a title="contact" href="index.html#contact">Contact</a></li>
+        <li><a title="contact" href="#email">Contact</a></li>
       </ul>
     </nav>
+<!-- ///END OF NAV -->
 
-    <section id="about society" class="about society sticky">
-      <img id="video" src="#" alt="video" width="1024" />
+   <section id="about" class="about">
+      <div id="empty" class="empty"></div>
 
-      <img
-        id="backdrop"
-        src="src/img/secondcard_empty.png"
-        alt="backgroundcard"
-        width="1600"
-        height="1200"
-      />
-
-      <div class="empty"></div>
+      <section id="aboutVideo society" class="aboutVideo society sticky">
+        <iframe
+          src="https://player.vimeo.com/video/680875541?badge=0&amp;autopause=0&amp;quality_selector=1&amp;progress_bar=1&amp;player_id=0&amp;app_id=58479"
+          width="2500"
+          height="1600"
+          frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          title="Trailer Society - a narrative installation"
+        ></iframe>
+      </section>
     </section>
 
-    <section id="about society video" class="about society video"></section>
-
-    <section id="about society text" class="about society text">
-      <div class="title">
-        <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit. Sed ut perspiciatis unde omnis iste
-          natus error sit voluptatem accusantium doloremque laudantium, totam
-          rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-          voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-          <br />
-          <br />
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-          aspernatur aut odit aut fugit.
-        </p>
+     <section id="about society text" class="about society text">
+      <div class="title"></div>
+      <div>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+        illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+        explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+        odit aut fugit. Sed ut perspiciatis unde omnis iste natus error sit
+        voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+        dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+        aspernatur aut odit aut fugit.
       </div>
     </section>
-
-    <section id="stories" class="service service-stories sticky">
-      <article>
-        <figure class="overlay">
-          <img
-            class="card"
-            src="src/img/secondcard_empty.png"
-            alt="backdrop card"
-          />
-        </figure>
-        <div class="text">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit.
-          </p>
-        </div>
-      </article>
+    <section>
+      <section id="stories" class="service service-stories sticky">
+        <article>
+          <figure class="overlay">
+           
+            <div id="firstfrontimage" class="frontimage">
+              <img src="src/img/AlexVerhaest:AdHominem_level3.png"alt="gamestill" />
+            </div>
+          </figure>
+          <div class="text">
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit.
+            </p>
+          </div>
+        </article>
+      </section>
     </section>
 
-    <section id="projects" class="service service-projects sticky">
-      <article>
-        <figure>
-          <img
-            class="hand"
-            src="src/img/secondcard_empty.png"
-            alt="triangleshape"
-            width="650"
-          />
-        </figure>
-        <div class="text">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit.
-          </p>
-        </div>
-      </article>
+    <section>
+      <section id="projects" class="service service-projects sticky">
+        <article>
+          <figure>
+            <img
+              src="src/img/AlexVerhaest:AdHominem_level2.png"
+              alt="still out of film"
+            />
+          </figure>
+          <div class="text">
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit.
+            </p>
+          </div>
+        </article>
+      </section>
     </section>
 
-    <section id="contact" class="service service-contact sticky">
-      <article>
-        <figure id="blend" class="blend">
-          <img
-            src="src/img/secondcard_empty.png"
-            alt="octagonshape"
-            width="650"
-          />
-        </figure>
-        <div class="text">
-          <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit.
-          </p>
-        </div>
-      </article>
+    <section>
+      <section id="contact" class="service service-contact sticky">
+        <article>
+          <figure id="blend" class="blend">
+            <img
+              src="src/img/AlexVerhaest:AdHominem_level4.png"
+              alt="still out of film"
+            />
+          </figure>
+          <div class="text">
+            <p>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit.
+            </p>
+          </div>
+        </article>
+      </section>
     </section>
 
-    <section class="email full-screen">
-      <a href="mailto:info.alexverhaest@gmail.com"
-        >info.alexverhaest@gmail.com</a
-      >
+    <section>
+      <section id="email" class="email full-screen">
+        <a href="mailto:info.alexverhaest@gmail.com"
+          >info.alexverhaest@gmail.com</a
+        >
+      </section>
     </section>
-
+     <script src="https://player.vimeo.com/api/player.js"></script>
     <script src="src/script.js"></script>
   </body>
 </html>
