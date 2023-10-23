@@ -330,6 +330,11 @@ section.service.service-contact figure img {
 }
 
 /* RESPONSIVE */
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 67%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   html,
